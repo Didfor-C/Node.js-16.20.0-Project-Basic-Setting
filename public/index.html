@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Membership Management</title>
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <!-- Add your CSS here -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      form {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #0056b3;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #004494;
+      }
+
+      #userProfile {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #profileInfo {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>User Registration</h2>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" /><br />
+      <input type="text" id="userID" placeholder="UserID" /><br />
+      <input type="text" id="phoneNumber" placeholder="Phone Number" /><br />
+      <input type="email" id="email" placeholder="Email" /><br />
+      <input type="password" id="password" placeholder="Password" /><br />
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>User Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" /><br />
+      <input type="password" id="loginPassword" placeholder="Password" /><br />
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Update Profile</h2>
+    <form id="updateForm">
+      <input type="text" id="updateUsername" placeholder="New Username" /><br />
+      <button type="submit">Update Profile</button>
+    </form>
+
+    <div id="userProfile" style="display: none">
+      <h2>User Profile</h2>
+      <p id="profileInfo"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
