@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const apiBase = "https://basicsetting.loca.lt/users";
+  const apiBase = "./users";
 
   // Handle Registration
   $("#registerForm").submit(function (e) {

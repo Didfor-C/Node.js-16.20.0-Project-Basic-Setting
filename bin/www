@@ -34,7 +34,7 @@ server.listen(PORT, () => {
   (async () => {
     const tunnel = await localtunnel({
       port: PORT,
-      subdomain: "basicsetting",
+      subdomain: process.env.SUB_DOMAIN,
     });
     console.log(`Public URL is: ${tunnel.url}`);
     tunnel.on("close", () => {
